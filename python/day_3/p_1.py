@@ -45,7 +45,7 @@ def get_adj_nums(coords):
         nums.append(int(start))
 
     return nums 
-
+print(coords)
 nums = get_adj_nums(coords)
 # nums = [4, 653, 48, 132, 996, 271, 289, 527, 76, 944, 943, 432, 41, 515...etc]
 p_1 = sum(nums)
