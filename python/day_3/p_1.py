@@ -3,6 +3,12 @@
 with open('input.txt') as file:
     grid = file.read().splitlines()
 
+"""Grid is a list of lines:
+
+['.....489............................152....503.........................180......200.........147.......13.......................239..........', '......*.....186.48....681...732........*..................935.........*.....................*......................512............*..874....', '..806.540......*.........*............249......904...358....*......957..867..863..........857.....264..............@....89=......97..*......',...]
+
+"""
+
 def get_adj_coords(grid):
     # We need to find the coordinations of valid numbers (those adjacent
     # to symbols), and keep track of our them in a set to prevent duplication
@@ -47,7 +53,7 @@ def get_adj_nums(coords):
     return nums 
 print(coords)
 nums = get_adj_nums(coords)
-# nums = [4, 653, 48, 132, 996, 271, 289, 527, 76, 944, 943, 432, 41, 515...etc]
+# nums = [4, 653, 48, 132, 996, 271, 289, 527, 76, 944,...etc]
 p_1 = sum(nums)
 print(p_1)
 # 507214
